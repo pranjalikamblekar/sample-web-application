@@ -1,11 +1,11 @@
 pipeline{
-    agent any
+    agent none
     stages{
         stage('Quality Gate Status Check'){
             agent {
                 docker {
-                image 'maven'
-                args '-v $HOME/.m2:/root/.m2'
+                    image 'maven'
+                    args '-v $HOME/.m2:/root/.m2'
                 }
             }
         
