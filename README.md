@@ -6,7 +6,7 @@
 ```
 mvn clean package
 and build the instruction .
-we check quality gate in this branch.
+..
 ```
 
 # Deploy instruction
