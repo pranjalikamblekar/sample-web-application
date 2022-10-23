@@ -6,7 +6,7 @@
 ```
 mvn clean package
 and build the instruction .
-we check quality gate in this branch.
+we add a dockerfile and build docker image in this branch.
 ```
 
 # Deploy instruction
