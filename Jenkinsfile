@@ -38,8 +38,8 @@ pipeline{
                 script{
 		            
                     sh 'docker build . -t pranjalikamblekar/devops-training:$Docker_tag'
-		            withCredentials([string(credentialsId: 'docker-password', variable: 'docker-password')]) {  
-				        sh 'docker login -u pranjalikamblekar -p $docker-password'
+		            withCredentials([string(credentialsId: 'docker-password', variable: 'docker_password')]) {  
+				        sh 'docker login -u pranjalikamblekar -p $docker_password'
 				        sh 'docker push pranjalikamblekar/devops-training:$Docker_tag'
 			        }
                 }
